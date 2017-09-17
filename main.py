@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 eu = ''
 peu = 0
@@ -13,7 +13,7 @@ while eu != 'a':
         print('Placar Eu {} x CPU {}'.format(peu, pcpu))
 
         eu = opt[int(input('Digite a Opção: '))]
-        cpu = opt[random.randint(1, 3)]
+        cpu = opt[randint(1, 3)]
         print('=' * 50)
         if eu == opt[1] and cpu == opt[1] or eu == opt[2] and  \
                         cpu == opt[2] or eu == opt[3] and cpu == opt[3]:
