@@ -38,3 +38,9 @@ while eu != 'a':
         print('-' * 50)
 print('Saiu do Jogo !')
 print('Resultado Final: Eu {} X CPU {}'.format(peu, pcpu))
+if peu > pcpu:
+    print('Você Venceu, Parabéns')
+elif peu == pcpu:
+    print('Empatou !')
+else:
+    print('Você Perdeu , Mais sorte na proxima!')
